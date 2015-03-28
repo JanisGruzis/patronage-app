@@ -1,5 +1,9 @@
-controllers.controller('Types', ['$scope', '$http',
+controllers.controller('types', ['$scope', '$http',
     function ($scope, $http) {
-        $scope.text = 'Hello world';
+		$scope.types = [
+			{name:"Autobuss",id:"Autobuss"},
+			{name:"Trolejbuus",id:"Trolejbuss"},
+			{name:"Tramvajs",id:"Tramvajs"},
+		];
     }
 ]);

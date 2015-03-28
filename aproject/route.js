@@ -1,7 +1,7 @@
 app.config(['$routeProvider',
     function($routeProvider) {
         $routeProvider.
-		    when('/', {
+		    when('/transport/:type', {
                 templateUrl: 'templates/transport.html',
                 controller: 'transport'
             }).
@@ -9,9 +9,9 @@ app.config(['$routeProvider',
 				templateUrl: 'templates/stops.html',
 				controller: 'Stops'
 			}).
-			when('/route/:type', {
-				templateUrl: 'templates/routes.html',
-				controller: 'routes'
+			when('/', {
+				templateUrl: 'templates/types.html',
+				controller: 'types'
 			}).
 			otherwise({
 				redirectTo: '/'

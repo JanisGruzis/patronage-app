@@ -1,9 +1,8 @@
-controllers.controller('transport', ['$scope', '$http',
-    function ($scope, $http) {
-        $scope.transports = [
-			{name:"Autobuss",id:"A"},
-			{name:"Trolejbuus",id:"T"},
-			{name:"Tramvajs",id:"R"},
-		];
+controllers.controller('transport', ['$scope', '$http', '$routeParams',
+    function ($scope, $http, $routeParams) {
+		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/transport/list/' + $routeParams.type)
+			.success(function(data){
+				$scope.transports = data;
+			});
     }
 ]);
