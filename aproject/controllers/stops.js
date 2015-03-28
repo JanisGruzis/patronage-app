@@ -6,9 +6,9 @@ controllers.controller('Stops', ['$scope', '$http', '$routeParams',
 				$scope.route = data[0].id;
 			});
 
-		$scope.watch('route', function(newValue, oldValue){
+		$scope.$watch('route', function(newValue, oldValue){
 			if (newValue != oldValue) {
-				$http.get('http://patronage.cloudapp.net/app_dev.php/stops/route/list/' + $scope.route)
+				$http.get('http://patronage.cloudapp.net/app_dev.php/rest/stop/list/' + $scope.route)
 					.success(function(data){
 						$scope.stops = data;
 					});
