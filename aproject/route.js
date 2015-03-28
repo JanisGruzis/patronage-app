@@ -17,6 +17,17 @@ app.config(['$routeProvider',
 				templateUrl: 'templates/time.html',
 				controller: 'Time'
 			}).
+			when('/report_thx/:rid/:transport', {
+				templateUrl: 'templates/report_thx.html',
+				controller: 'ReportThx'
+			}).
+			when('/report_route/:type', {
+				templateUrl: 'templates/report_route.html',
+				controller: 'ReportRoute'
+			}).
+			when('/report', {
+				templateUrl: 'templates/report.html',
+			}).
 			when('/', {
 				templateUrl: 'templates/types.html',
 				controller: 'types'
