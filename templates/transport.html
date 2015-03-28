@@ -1,5 +1,8 @@
 <ul class="list-group" >
     <li class="list-group-item" ng-repeat="t in transports" >
-        <a ng-href="#/stops/{{t.id}}">{{ t.name}}</a>
+        <a ng-href="#/stops/{{t.id}}">
+			<strong>{{ t.name }}</strong>
+			<span ng-show="t.routes.length > 0">| {{ t.routes[0].name }}</span>
+		</a>
     </li>
 </ul>
