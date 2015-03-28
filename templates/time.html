@@ -1,8 +1,15 @@
+<ul class="pagination">
+  <li><a href="#/">Transport type</a></li>
+  <li><a href="#/stops/">Number</a></li>
+  <li><a href="#/type/">Stop</a></li>
+  <li class="active"><a href="javascript:void(0);">Time <span class="sr-only">(current)</span></a></li>
+</ul>
 <div class="responsive-table container-fluid">
 	<div class="row-fluid" ng-repeat="h in height">
-		<div class="pull-left"><strong>{{ h > 9 ? h : '0' + h }}</strong></div>
+		<div class="pull-left"><span class="label label-default"><strong>{{ h > 9 ? h : '0' + h }}</strong></span></div>
 		<div class="pull-left" ng-repeat="time in times[h]">{{ time.time | date : "mm" }}</div>
 		<div style="clear:both"></div>
+		<hr>
 	</div>
 	<div style="clear:both"></div>
 </div>

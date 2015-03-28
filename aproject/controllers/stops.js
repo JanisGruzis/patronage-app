@@ -1,8 +1,10 @@
-controllers.controller('Stops', ['$scope', '$http', '$routeParams',
-    function ($scope, $http, $routeParams) {
+controllers.controller('Stops', ['$scope', '$http', '$routeParams', '$rootScope', 
+    function ($scope, $http, $routeParams, $rootScope) {
+	
+		$rootScope.gTransportId = $routeParams.transportId;
+		console.log('$routeParams', $routeParams);
 		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/route/list/' + $routeParams.transportId)
 			.success(function(data){
-				console.log(data);
 				$scope.routes = data;
 				$scope.route = data[0].id;
 				$http.get('http://patronage.cloudapp.net/app_dev.php/rest/stop/list/' + $scope.route)
