@@ -12,7 +12,14 @@ controllers.controller('Stops', ['$scope', '$http', '$routeParams', '$rootScope'
 						$scope.stops = data;
 					});				
 			});
-
+		var reisId = ($routeParams.reisId)?$routeParams.reisId:false;
+		
+		if(reisId){
+			$http.get('http://patronage.cloudapp.net/app_dev.php/rest/stop/time/' + reisId)
+			.success(function(data){
+				$scope.time = data;
+			});
+		}
 /* 		$scope.$watch('route', function(newValue, oldValue){
 			console.log(this);
 			if (newValue != oldValue) {
