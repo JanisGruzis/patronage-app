@@ -1,7 +1,6 @@
 controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 	function ($scope, $http, $routeParams, $rootScope) {
-		$rootScope.gRouteId = $routeParams.routeId;
-		$rootScope.gStopId = $routeParams.stopId;
+		$rootScope.gNumber = $routeParams.stops;
 		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/time/list/'
 			+ $routeParams.routeId + '/' + $routeParams.stopId)
 			.success(function(data){
@@ -17,5 +16,6 @@ controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 
 				$scope.times = data;
 			});
+		//test
     }
 ]);
