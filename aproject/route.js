@@ -5,6 +5,10 @@ app.config(['$routeProvider',
                 templateUrl: 'templates/types.html',
                 controller: 'Types'
             }).
+			when('/stops/:transportId', {
+				templateUrl: 'templates/stops.html',
+				controller: 'Stops'
+			}).
             otherwise({
                 redirectTo: '/'
             })

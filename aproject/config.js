@@ -3,9 +3,10 @@
 //     $interpolateProvider.startSymbol('[[').endSymbol(']]');
 // }])
 // Add ajax header, that server knows that Angular requet is ajax.
-app.config(['$httpProvider', function($httpProvider) {
-    $httpProvider.defaults.headers.common["X-Requested-With"] = 'XMLHttpRequest';
-}])
+app
+.config(function ($httpProvider) {
+	delete $httpProvider.defaults.headers.common['X-Requested-With'];
+})
 // Global handler of requests.
 .factory('authHttpResponseInterceptor',['$q','$location',function($q,$location){
     return {
