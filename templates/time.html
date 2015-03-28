@@ -2,6 +2,7 @@
 	<div class="row-fluid" ng-repeat="h in height">
 		<div class="pull-left"><strong>{{ h > 9 ? h : '0' + h }}</strong></div>
 		<div class="pull-left" ng-repeat="w in width">{{ times[h][w].time | date : "mm" }}</div>
-		<div class="clearfix"></div>
+		<div style="clear:both"></div>
 	</div>
+	<div style="clear:both"></div>
 </div>
