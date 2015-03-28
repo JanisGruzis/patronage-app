@@ -9,6 +9,10 @@ app.config(['$routeProvider',
 				templateUrl: 'templates/stops.html',
 				controller: 'Stops'
 			}).
+			when('/time/:routeId/:stopId', {
+				templateUrl: 'templates/time.html',
+				controller: 'Time'
+			}).
 			when('/', {
 				templateUrl: 'templates/types.html',
 				controller: 'types'
