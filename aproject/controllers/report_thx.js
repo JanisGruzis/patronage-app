@@ -5,7 +5,7 @@ controllers.controller('ReportThx', ['$scope', '$http','$routeParams','$timeout'
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(function(position){
 			  $scope.$apply(function(){
-				$http.post('/rest/report', {
+				$http.post('/report', {
 					rid:rid,
 					tid: transportId,
 					lat:position.coords.latitude,
