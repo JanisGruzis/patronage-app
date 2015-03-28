@@ -1,0 +1,7 @@
+.responsive-table > div {
+	padding: 2px 0px;
+}
+
+.responsive-table > div > div {
+	padding: 0px 3px;
+}
