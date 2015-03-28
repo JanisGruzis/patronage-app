@@ -4,8 +4,8 @@
 	</option>
 </select>
 
-<ul class="list-group">
-	<li class="list-group-item" ng-repeat="item in stops">
-		<a ng-href="#/time/{{ route }}/{{ item.id }}">{{ item.name }}</a>
-	</li>
-</ul>
+<div class="list-group">
+	<a class="list-group-item" ng-repeat="item in stops"  ng-href="#/time/{{ route }}/{{ item.id }}">
+		{{ item.name }}
+	</a>
+</div>

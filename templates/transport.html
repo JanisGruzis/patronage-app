@@ -1,6 +1,6 @@
 <div class="list-group" >
     <a class="list-group-item" ng-repeat="t in transports"  ng-href="#/stops/{{t.id}}">
-		{{ t.name }}
+		<span class="label label-default">{{ t.name }}</span>
 		<span ng-show="t.routes.length > 0">| {{ t.routes[0].name }}</span>
     </a>
 </div>
