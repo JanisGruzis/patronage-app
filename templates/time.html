@@ -1,0 +1,8 @@
+<table class="table table-striped">
+	<tbody>
+		<tr ng-repeat="h in height">
+			<th>{{ h }}</th>
+			<td ng-repeat="w in width">{{ times[h][w].time | date : "mm" }}</td>
+		</tr>
+	</tbody>
+</table>
