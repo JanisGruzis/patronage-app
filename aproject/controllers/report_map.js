@@ -8,7 +8,7 @@ controllers.controller('ReportMap', ['$scope', '$http',
 		var map = new google.maps.Map(document.getElementById('map-canvas'),
 			mapOptions);
 
-		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/report')
+		$http.get('http://patronage.cloudapp.net/api/report')
 			.success(function(data){
 				_.each(data, function(item){
 					var title = 'Nezināms';

@@ -6,7 +6,7 @@ controllers.controller('ReportThx', ['$scope', '$http','$routeParams','$timeout'
 			navigator.geolocation.getCurrentPosition(function(position){
 			  $scope.$apply(function(){
 				$http({
-					url: 'http://patronage.cloudapp.net/app_dev.php/report',
+					url: 'http://patronage.cloudapp.net/report',
 					method: "GET",
 				  	params: {
 						rid:rid,

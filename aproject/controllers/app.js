@@ -25,7 +25,7 @@ controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 		}
 		
 		$rootScope.gNumber = $routeParams.stops;
-		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/time/list/'
+		$http.get('http://patronage.cloudapp.net/rest/time/list/'
 			+ $routeParams.routeId + '/' + $routeParams.stopId)
 			.success(function(data){
 				var keys = _.keys(data);
