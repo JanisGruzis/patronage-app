@@ -29,11 +29,18 @@ controllers.controller('ReportMap', ['$scope', '$http',
 							break;
 					}
 
+					if (item.transport)
+					{
+						var transport = item.transport;
+						title = transport.type + ' ' + transport.name + '. ' + title;
+					}
+
 					var ll = new google.maps.LatLng(item.lat, item.lng);
 					var marker = new google.maps.Marker({
 						position: ll,
 						title: title,
-						map: map
+						map: map,
+						icon: 'img/' + item.type + '.png'
 					});
 
 					var infowindow = new google.maps.InfoWindow({
@@ -46,6 +53,6 @@ controllers.controller('ReportMap', ['$scope', '$http',
 				});
 			});
 
-		google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, 'load');
     }
 ]);
