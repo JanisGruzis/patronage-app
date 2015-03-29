@@ -29,6 +29,11 @@ controllers.controller('Stops', ['$scope', '$http', '$routeParams', '$rootScope'
 					});
 			}
 		}); */
+		$scope.setName = function(name)
+		{
+			$rootScope.stopName = name;
+		}
+
 		$scope.setDirection = function(e) {
 			//console.log('e', e.item.id);
 			$http.get('http://patronage.cloudapp.net/rest/stop/list/' + e.item.id)

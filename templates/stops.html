@@ -22,7 +22,7 @@
 -->
 <div class="list-group">
 	<span  ng-repeat="item in stops">
-	<a class="list-group-item"  ng-href="#/time/{{ route }}/{{ item.id }}">
+	<a class="list-group-item" ng-click="setName(item.name)" ng-href="#/time/{{ route }}/{{ item.id }}">
 		<div class="pull-left" ng-show="{{ showTime }}">{{ (time[item.id])?(time[item.id].time | dateformat : "HH:mm"):"" }}&nbsp;|&nbsp;</div>
 		{{ item.name }}
 	</a>

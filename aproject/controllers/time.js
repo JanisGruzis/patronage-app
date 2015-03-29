@@ -1,5 +1,7 @@
 controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 	function ($scope, $http, $routeParams, $rootScope) {
+		$scope.stopName = $rootScope.stopName;
+
 		$scope.getColor = function (rating){
 			/*
 			var palette = [
