@@ -16,3 +16,12 @@ filters.filter('range',function(){
         return _.range(to);
     };
 });
+
+/**
+ * Date string to IOS standart.
+ */
+filters.filter('dateToISO', function() {
+	return function(input) {
+		return new Date(input).toISOString();
+	};
+});
