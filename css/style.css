@@ -35,9 +35,9 @@ hr {
     color: white;
     text-align: center;
     
-   font-size: 4vw;	
+   font-size: 1.1em;	
     margin: 0.1em;
-   padding: 1vw;
+   padding: 0.4em;
    vertical-align: middle;
 }
 
@@ -58,7 +58,7 @@ hr {
     color: white;
     text-align: center;    
    	
-   font-size: 6vw;	
+   font-size: 2em;	
     
    /* margin: 0.1em; */
    padding: 6px;
@@ -88,39 +88,55 @@ a.time-button:hover{
 .navbar.navbar-default{
 	margin-bottom: 0;
 }
-
-.minute-color-1 {
+/*
+.minute-color-1-1 {
 	background-color: #16a085;
 }
-.minute-color-2 {
+.minute-color-1-2 {
 	background-color: #16a085;
 }
-.minute-color-3 {
+.minute-color-1-3 {
 	background-color: #1abc9c;
 }
-.minute-color-4 {
+.minute-color-1-4 {
 	background-color: #2ecc71;
 }
-.minute-color-5 {
+.minute-color-1-5 {
 	background-color: #8cbf26;
 }
-.minute-color-6 {
+.minute-color-1-6 {
 	background-color: #f1c40f;
 }
-.minute-color-7 {
+*/
+.minute-color-1-1 {
 	background-color: #f39c12;
 }
-.minute-color-8 {
+.minute-color-1-2 {
 	background-color: #e67e22;
 }
-.minute-color-9 {
+.minute-color-1-3 {
 	background-color: #d35400;
 }
-.minute-color-10 {
+.minute-color-1-4 {
 	background-color: #e74c3c;
 }
-.minute-color-11 {
+.minute-color-1-5 {
 	background-color: #c0392b;
+}
+.minute-color-2-1 {
+	background-color: #BEBEBE;
+}
+.minute-color-2-2 {
+	background-color: #B2B2B2;
+}
+.minute-color-2-3 {
+	background-color: #9E9E9E;
+}
+.minute-color-2-4 {
+	background-color: #909090;
+}
+.minute-color-2-5 {
+	background-color: #888888;
 }
 .nav>li {
   float: right;
