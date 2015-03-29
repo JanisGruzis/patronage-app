@@ -28,6 +28,9 @@ app.config(['$routeProvider',
 			when('/report', {
 				templateUrl: 'templates/report.html'
 			}).
+			when('/docs', {
+				templateUrl: 'templates/docs.html',
+			}).
 			when('/report_map', {
 				templateUrl: 'templates/report_map.html',
 				controller: 'ReportMap'
