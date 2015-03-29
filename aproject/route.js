@@ -35,6 +35,10 @@ app.config(['$routeProvider',
 				templateUrl: 'templates/report_map.html',
 				controller: 'ReportMap'
 			}).
+			when('/options', {
+				templateUrl: 'templates/options.html',
+				controller: 'Options'
+			}).			
 			when('/', {
 				templateUrl: 'templates/types.html',
 				controller: 'types'
