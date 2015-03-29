@@ -2,7 +2,6 @@ controllers.controller('Stops', ['$scope', '$http', '$routeParams', '$rootScope'
     function ($scope, $http, $routeParams, $rootScope) {
 	
 		$rootScope.gTransportId = $routeParams.transportId;
-		console.log('$routeParams', $routeParams);
 		$http.get('http://patronage.cloudapp.net/rest/route/list/' + $routeParams.transportId)
 			.success(function(data){
 				$scope.routes = data;
