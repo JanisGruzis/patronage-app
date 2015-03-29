@@ -33,7 +33,8 @@ controllers.controller('ReportMap', ['$scope', '$http',
 					var marker = new google.maps.Marker({
 						position: ll,
 						title: title,
-						map: map
+						map: map,
+						icon: 'img/' + item.type + '.png'
 					});
 
 					var infowindow = new google.maps.InfoWindow({
