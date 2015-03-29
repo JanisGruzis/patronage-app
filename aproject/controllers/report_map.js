@@ -41,7 +41,7 @@ controllers.controller('ReportMap', ['$scope', '$http',
 
 				if (data.length) {
 					data = _.first(data, 5);
-					var colors = ['green', 'blue', 'yellow', 'orange', ', red'];
+					var colors = ['#2d89ef', '#ffc40d', '#7e3878', '#1e7145', '#00aba9'];
 					for (var i = 0; i < data.length; ++i) {
 						data[i].push(colors[i]);
 					}
