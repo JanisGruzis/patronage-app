@@ -42,7 +42,7 @@ app.config(['$routeProvider',
 			when('/options', {
 				templateUrl: 'templates/options.html',
 				controller: 'Options'
-			}).			
+			}).
 			when('/', {
 				templateUrl: 'templates/types.html',
 				controller: 'types'
