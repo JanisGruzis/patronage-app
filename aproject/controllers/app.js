@@ -1,5 +1,29 @@
 controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 	function ($scope, $http, $routeParams, $rootScope) {
+		//
+		$scope.getColor = function (rating){
+			var palette = [
+				'#16a085',
+				'#16a085',
+				'#1abc9c',
+				'#2ecc71',
+				'#8cbf26',
+				'#f1c40f',
+				'#f39c12',
+				'#e67e22',
+				'#d35400',
+				'#e74c3c',
+				'#c0392b'
+			]
+			//var n = rating;
+			//var R = Math.round((255 * n));
+			//var G = Math.round((255 * (1 - n)));
+			//var B = 0;
+			//return ("rgb(" + R.toString() + ", " + G.toString() + ", " + B.toString() + ")");
+			//return "#"+(R).toString(16)+(G).toString(16)+(B).toString(16);
+			return palette[Math.round((palette.length - 1) * rating)];
+		}
+		
 		$rootScope.gNumber = $routeParams.stops;
 		$http.get('http://patronage.cloudapp.net/app_dev.php/rest/time/list/'
 			+ $routeParams.routeId + '/' + $routeParams.stopId)
@@ -16,6 +40,6 @@ controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 
 				$scope.times = data;
 			});
-		//test
+		//var minutes = document.getElementsByClassName("minute");
     }
 ]);
