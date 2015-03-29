@@ -20,8 +20,8 @@ filters.filter('range',function(){
 /**
  * Date string to IOS standart.
  */
-filters.filter('dateToISO', function() {
-	return function(input) {
-		return new Date(input).toISOString();
+filters.filter('dateformat', function() {
+	return function(input, format) {
+		return moment(input).format(format);
 	};
 });
