@@ -10,20 +10,33 @@
 	width:250px;
 	padding: 15px;
 	color: #fff;
-	
 }
+h1,h2,h3,h4{
+	margin: 15px 0px 15px 0px;
+}
+table th, table thead td {
+  border: 1px solid #E5E5E5;
+  border-bottom: 1px solid #fff;
+  background: #74B1DC;
+  color: #fff;
+  font-weight: normal;
+  
+}
+th,td{
+	font-weight: bold;
+	min-width:80px;
+  text-align: left;
+  padding: 6px 4px;
+  font-size: 13px;}
 </style>
       <h1>Patronage API</h1>
 	  <br>
       <h3>What You Need To Do</h3>
-      <p>Eee.. Nothing. Absolutely NOTHING.</p>
-	  <p>You can directly make HTTP requests to the &nbsp;&nbsp;<span style="font-style: italic">"api/reports"</span>&nbsp;&nbsp;
-	  endpoints and get back a JSON response.</p>
+      <p>Eee.. Nothing. Data is public.</p>
+	  <p>You can directly make HTTP requests to the  endpoints and get back a JSON response.</p>
 
      
-
-      <pre>http://patronage.cloudapp.net/api/report</pre>
-<br>
+		<br>
       <h3>Things You Should Know:</h3>
       <div class="wrap">
 		  <h1 class="calm">Keep calm </h1>
@@ -32,3 +45,161 @@
 	  </div>
    
     </div>
+	
+	<br>
+		<h3><strong>Reports</strong></h3>
+		<br>
+		<p>
+		 Reports sent by passengers about some disturbance in public transport grouped by specific route.
+		</p>
+		<br>
+      <pre>http://patronage.cloudapp.net/api/report</pre>
+	  <h4> Properties </h4>
+		<table class="properties">
+			<tr>
+				<th>name</th>
+				<th>description</th>
+				<th>example value</th>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>integer ID</td>
+				<td>123</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td>integer ID</td>
+				<td>1 - Homeless, 2 - Crowded, 3 - Rabbit, 4 - Dirty</td>
+			</tr>
+			<tr>
+				<td>created_at</td>
+				<td>timestamp</td>
+				<td>2015-03-29 07:09:07</td>
+			</tr>
+			<tr>
+				<td>lat</td>
+				<td>float</td>
+				<td>56.948546</td>
+			</tr>
+			<tr>
+				<td>long</td>
+				<td>float</td>
+				<td>24.0003391</td>
+			</tr>
+			<tr>
+				<td>transport</td>
+				<td>JSON object</td>
+				<td> - </td>
+			</tr>
+			<tr>
+		</table>
+		
+	  <br>
+	  <h3><strong>Transport lines</strong></h3>
+	  <br>
+		<p>
+		 List of all lines in Riga for given type.
+		</p>
+	  <br>
+      <pre>http://patronage.cloudapp.net/rest/transport/list/{TYPE}</pre>
+	  <h4> Properties </h4>
+	  <br>
+	  <table class="properties">
+			<tr>
+				<th>name</th>
+				<th>description</th>
+				<th>example value</th>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>integer ID</td>
+				<td>123</td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>string</td>
+				<td> "Esplanāde"</td>
+			</tr>
+			<tr>
+				<td>type</td>
+				<td>string</td>
+				<td> "Autobuss","Trolejbuss","Tramvajs"</td>
+			</tr>
+			<tr>
+				<td>routes</td>
+				<td>JSON array</td>
+				<td> - </td>
+			</tr>
+		</table>
+		<br>
+		
+	  <h3><strong>Routes</strong></h3>
+	  <br>
+		<p>
+		 All possible route list for given line id.
+		</p>
+	  <br>
+      <pre>http://patronage.cloudapp.net/rest/route/list/{ROUTE_ID}</pre>
+	  <h4> Properties </h4>
+	  <table class="properties">
+			<tr>
+				<th>name</th>
+				<th>description</th>
+				<th>example value</th>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>integer ID</td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>string</td>
+				<td> "Abrenes iela - Garkalnes Mucenieki"</td>
+			</tr>
+			<tr>
+				<td>transport</td>
+				<td>JSON object</td>
+				<td> -</td>
+			</tr>
+		</table>
+		<br>
+	  <h3><strong>Stops</strong></h3>
+	  <br>
+		<p>
+		 All stop list for given route id.
+		</p>
+	  <br>
+      <pre>http://patronage.cloudapp.net/rest/stops/{ROUTE_ID}</pre>
+	  <h4> Properties </h4>
+	  <table class="properties">
+			<tr>
+				<th>name</th>
+				<th>description</th>
+				<th>example value</th>
+			</tr>
+			<tr>
+				<td>id</td>
+				<td>integer ID</td>
+				<td> 1 </td>
+			</tr>
+			<tr>
+				<td>name</td>
+				<td>string</td>
+				<td> "Esplanāde"</td>
+			</tr>
+			<tr>
+				<td>lat</td>
+				<td>float</td>
+				<td>56.948546</td>
+			</tr>
+			<tr>
+				<td>long</td>
+				<td>float</td>
+				<td>24.0003391</td>
+			</tr>
+		</table>
+		<br>
+		<br>
+		<br>
+		<br>
