@@ -10,6 +10,12 @@ hr {
 	margin: 0;
 }
 
+.btn-toolbar > .btn,
+.btn-toolbar > .btn-group,
+.btn-toolbar > .input-group {
+  margin-bottom: 20px;
+}
+
 .minute {
    /* display: block; */
     
@@ -44,9 +50,43 @@ a.time-button:hover{
 	font-size: 1em;
 }
 .container.content{
-	width: 750px;
+	/*width: 750px;*/
 }
 
 .navbar.navbar-default{
 	margin-bottom: 0;
+}
+
+.minute-color-1 {
+	background-color: #16a085';
+}
+.minute-color-2 {
+	background-color: #16a085';
+}
+.minute-color-3 {
+	background-color: #1abc9c';
+}
+.minute-color-4 {
+	background-color: #2ecc71';
+}
+.minute-color-5 {
+	background-color: #8cbf26';
+}
+.minute-color-6 {
+	background-color: #f1c40f';
+}
+.minute-color-7 {
+	background-color: #f39c12';
+}
+.minute-color-8 {
+	background-color: #e67e22';
+}
+.minute-color-9 {
+	background-color: #d35400';
+}
+.minute-color-10 {
+	background-color: #e74c3c';
+}
+.minute-color-11 {
+	background-color: #c0392b;
 }
