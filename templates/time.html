@@ -11,7 +11,7 @@
 </ul>
 <div class="responsive-table container-fluid">
 	<div class="row-fluid" ng-repeat="h in height">
-		<div class="pull-left"><span class="label label-default"><strong>{{ h > 9 ? h : '0' + h }}</strong></span></div>
+		<div class="pull-left hour">{{ h > 9 ? h : '0' + h }}</div>
 		<div class="pull-left minute {{getColor(time.statistics.raiting)}}" ng-repeat="time in times[h]"><a class="time-button" ng-href="#/stops/{{time.route.transport.id}}/{{ time.reiss_id }}" >{{ time.time | date : "mm" }}</a></div>
 		<div style="clear:both"></div>
 		<hr>

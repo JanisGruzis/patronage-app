@@ -3,7 +3,7 @@
 }
 
 .responsive-table > div > div {
-	padding: 0px 3px;
+	/* padding: 0px; */
 }
 
 hr {
@@ -33,8 +33,33 @@ hr {
     color: white;
     text-align: center;
     
-   font-size: 0.9em;	
+   font-size: 4vw;	
     margin: 0.1em;
+   padding: 1vw;
+   vertical-align: middle;
+}
+
+.hour {
+   /* display: block; */
+    
+   /* height: 1.6em; */
+    
+   /* width: 1.6em; */
+    
+   /* line-height: 1.6em; */
+
+    -moz-border-radius: 1em;
+    
+   /* border-radius: 1em; */
+
+    background-color: #777777;
+    color: white;
+    text-align: center;    
+   	
+   font-size: 6vw;	
+    
+   /* margin: 0.1em; */
+   padding: 6px;
 }
 
 a.time-button{
@@ -89,4 +114,7 @@ a.time-button:hover{
 }
 .minute-color-11 {
 	background-color: #c0392b;
+}
+.nav>li {
+  float: right;
 }
