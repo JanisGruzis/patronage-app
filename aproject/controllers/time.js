@@ -23,7 +23,7 @@ controllers.controller('Time', ['$scope', '$http', '$routeParams', '$rootScope',
 			//return ("rgb(" + R.toString() + ", " + G.toString() + ", " + B.toString() + ")");
 			//return "#"+(R).toString(16)+(G).toString(16)+(B).toString(16);
 			//return palette[Math.round((palette.length - 1) * rating)];
-			return 'minute-color-1-' + ((Math.round(5 * rating) + 1).toString());
+			return 'minute-color-2-' + ((Math.round(4 * rating) + 1).toString());
 		}
 		
 		$rootScope.gNumber = $routeParams.stops;
