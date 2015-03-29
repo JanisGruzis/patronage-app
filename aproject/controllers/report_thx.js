@@ -1,0 +1,23 @@
+controllers.controller('ReportThx', ['$scope', '$http','$routeParams','$timeout','$location',
+    function ($scope, $http,$routeParams,$timeout,$location) {
+		var rid = $routeParams.rid;
+		var transportId = $routeParams.transport;
+		if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(function(position){
+			  $scope.$apply(function(){
+				$http.post('/report', {
+					rid:rid,
+					tid: transportId,
+					lat:position.coords.latitude,
+					long:position.coords.longitude
+				})
+				.success(function(data, status, headers, config) {{
+					$timeout(function() {
+					  $location.path("/");
+					  }, 5000);
+				}});
+			  });
+			});
+		  }
+    }
+]);

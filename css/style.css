@@ -9,3 +9,28 @@
 hr {
 	margin: 0;
 }
+
+.minute {
+   /* display: block; */
+    
+   /* height: 1.6em; */
+    
+   /* width: 1.6em; */
+    
+   line-height: 1.6em;
+
+    -moz-border-radius: 1em;
+    
+   /* border-radius: 1em; */
+
+    background-color: #777799;
+    color: white;
+    text-align: center;
+    font-size: 0.9em;	
+    margin: 0.1em;
+}
+
+a{
+	text-decoration: none;
+	color: #fff;
+}

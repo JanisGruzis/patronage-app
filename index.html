@@ -7,6 +7,7 @@
 		<!-- <link rel="stylesheet" href="bootstrap/css/bootstrap-theme.min.css"/> -->
 		<link rel="stylesheet" href="https://raw.githubusercontent.com/TalksLab/metro-bootstrap/master/dist/css/metro-bootstrap.css"/>
 		<link rel="stylesheet" href="css/style.css"/>
+		<link rel="stylesheet" href="css/font-awesome.min.css"/>
 <!--
 		<link href="http://fezvrasta.github.io/bootstrap-material-design/dist/css/roboto.min.css" rel="stylesheet">
 		<link href="http://fezvrasta.github.io/bootstrap-material-design/dist/css/material-fullpalette.min.css" rel="stylesheet">
@@ -28,6 +29,8 @@
 		<script src="aproject/controllers/types.js"></script>
 		<script src="aproject/controllers/stops.js"></script>
 		<script src="aproject/controllers/transport.js"></script>
+		<script src="aproject/controllers/report_route.js"></script>
+		<script src="aproject/controllers/report_thx.js"></script>
 
 		<script src="aproject/controllers/time.js"></script>
 	</head>
@@ -36,9 +39,12 @@
 		<div class="container">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="#/">Patronage</a>
+				<ul class="nav navbar-nav navbar-right pull-right">
+					<li><a ng-href="#/report"><i class="fa fa-exclamation" style="font-size:1.5em;" ></i></a></li>
+				</ul>
 			</div>
 		</div>
 	</nav>
-		<ng-view></ng-view>
+		<div ng-view></div>
 	</body>
 </html>

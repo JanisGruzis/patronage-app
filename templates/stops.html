@@ -21,7 +21,10 @@
 </select>
 -->
 <div class="list-group">
-	<a class="list-group-item" ng-repeat="item in stops"  ng-href="#/time/{{ route }}/{{ item.id }}">
+	<span  ng-repeat="item in stops">
+	<div class="pull-left" ng-show="reis"><strong>{{ (time[item.id])?(time[item.id].time | date : "HH:mm"):"" }}</strong></div>
+	<a class="list-group-item"  ng-href="#/time/{{ route }}/{{ item.id }}">
 		{{ item.name }}
 	</a>
+	</span>
 </div>
