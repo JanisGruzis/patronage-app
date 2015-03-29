@@ -22,6 +22,6 @@ filters.filter('range',function(){
  */
 filters.filter('dateToISO', function() {
 	return function(input) {
-		return new Date(input).toISOString();
+		return new Date(input);
 	};
 });

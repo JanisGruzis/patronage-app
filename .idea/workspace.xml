@@ -25,11 +25,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="report_map.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/aproject/controllers/report_map.js">
+      <file leaf-file-name="time.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/time.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.547744" vertical-offset="252" max-vertical-offset="2448">
-              <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
+            <state vertical-scroll-proportion="-13.333333" vertical-offset="0" max-vertical-offset="594">
+              <caret line="20" column="105" selection-start-line="20" selection-start-column="105" selection-end-line="20" selection-end-column="105" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="filters.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/aproject/filters.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4155299" vertical-offset="0" max-vertical-offset="953">
+              <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -54,13 +64,13 @@
         <option value="$PROJECT_DIR$/aproject/route.js" />
         <option value="$PROJECT_DIR$/aproject/controllers/report_thx.js" />
         <option value="$PROJECT_DIR$/aproject/controllers/app.js" />
-        <option value="$PROJECT_DIR$/aproject/filters.js" />
         <option value="$PROJECT_DIR$/templates/time.html" />
         <option value="$PROJECT_DIR$/templates/stops.html" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/templates/report.html" />
         <option value="$PROJECT_DIR$/templates/report_map.html" />
         <option value="$PROJECT_DIR$/aproject/controllers/report_map.js" />
+        <option value="$PROJECT_DIR$/aproject/filters.js" />
       </list>
     </option>
   </component>
@@ -70,9 +80,9 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="x" value="65" />
-    <option name="y" value="-4" />
+    <option name="y" value="24" />
     <option name="width" value="1855" />
-    <option name="height" value="1084" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -97,6 +107,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -177,7 +188,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -217,7 +227,7 @@
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="ToolWindowManager">
-    <frame x="65" y="-4" width="1855" height="1084" extended-state="6" />
+    <frame x="65" y="24" width="1855" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -261,6 +271,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/aproject/controllers/report_map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2448">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/templates/time.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="594">
@@ -308,7 +326,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.09443861" vertical-offset="0" max-vertical-offset="953">
           <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -361,10 +378,66 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aproject/filters.js">
+    <entry file="file://$PROJECT_DIR$/templates/transport.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4155299" vertical-offset="0" max-vertical-offset="953">
-          <caret line="22" column="25" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/types.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="234">
+          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/stops.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.116630666" vertical-offset="0" max-vertical-offset="926">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="25" selection-end-column="106" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/report_thx.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/report_route.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/report.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.52483803" vertical-offset="0" max-vertical-offset="926">
+          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/report_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09719223" vertical-offset="0" max-vertical-offset="926">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.43088552" vertical-offset="285" max-vertical-offset="1296">
+          <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/aproject/controllers/report_map.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09443861" vertical-offset="684" max-vertical-offset="2448">
+          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
           <folding />
         </state>
       </provider>
@@ -377,86 +450,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/transport.html">
+    <entry file="file://$PROJECT_DIR$/aproject/filters.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="926">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/types.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3333334" vertical-offset="0" max-vertical-offset="234">
-          <caret line="2" column="5" selection-start-line="2" selection-start-column="5" selection-end-line="2" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/stops.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.116630666" vertical-offset="0" max-vertical-offset="926">
-          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="25" selection-end-column="106" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/report_thx.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/report_route.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="953">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/report.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.52483803" vertical-offset="0" max-vertical-offset="926">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#a#0;n#div#2;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/report_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.09719223" vertical-offset="0" max-vertical-offset="926">
-          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.43088552" vertical-offset="285" max-vertical-offset="1296">
-          <caret line="38" column="94" selection-start-line="38" selection-start-column="94" selection-end-line="38" selection-end-column="94" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#0;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#a#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#nav#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aproject/controllers/report_map.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.547744" vertical-offset="252" max-vertical-offset="2448">
-          <caret line="43" column="66" selection-start-line="43" selection-start-column="66" selection-end-line="43" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.4155299" vertical-offset="0" max-vertical-offset="953">
+          <caret line="22" column="25" selection-start-line="22" selection-start-column="25" selection-end-line="22" selection-end-column="25" />
           <folding />
         </state>
       </provider>
