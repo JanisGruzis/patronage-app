@@ -13,6 +13,7 @@ controllers.controller('Stops', ['$scope', '$http', '$routeParams', '$rootScope'
 					});				
 			});
 		var reisId = ($routeParams.reisId)?$routeParams.reisId:false;
+		$scope.showTime = ($routeParams.reisId)?true:false;
 		
 		if(reisId){
 			$http.get('http://patronage.cloudapp.net/app_dev.php/rest/stop/time/' + reisId)

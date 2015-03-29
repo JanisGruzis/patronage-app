@@ -5,11 +5,15 @@ controllers.controller('ReportThx', ['$scope', '$http','$routeParams','$timeout'
 		if (navigator.geolocation) {
 			navigator.geolocation.getCurrentPosition(function(position){
 			  $scope.$apply(function(){
-				$http.post('/report', {
-					rid:rid,
-					tid: transportId,
-					lat:position.coords.latitude,
-					long:position.coords.longitude
+				$http({
+					url: 'http://patronage.cloudapp.net/app_dev.php/report',
+					method: "GET",
+				  	params: {
+						rid:rid,
+						tid: transportId,
+						lat:position.coords.latitude,
+						lng:position.coords.longitude
+					}
 				})
 				.success(function(data, status, headers, config) {{
 					$timeout(function() {
