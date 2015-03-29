@@ -28,7 +28,7 @@ controllers.controller('ReportMap', ['$scope', '$http',
 			var drawChart = function(type, title, elem) {
 
 				var data = _.filter($scope.reports, function(value){
-					return value.type == type;
+					return value.type == type && value.transport;
 				});
 
 				data = _.groupBy(data, function(value){
