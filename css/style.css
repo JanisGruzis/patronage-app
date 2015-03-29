@@ -26,11 +26,27 @@ hr {
     background-color: #777799;
     color: white;
     text-align: center;
-    font-size: 0.9em;	
+    
+   font-size: 0.9em;	
     margin: 0.1em;
 }
 
-a{
+a.time-button{
 	text-decoration: none;
 	color: #fff;
+}
+
+a.time-button:hover{
+	font-weight: bold;
+}
+
+.label{
+	font-size: 1em;
+}
+.container.content{
+	width: 750px;
+}
+
+.navbar.navbar-default{
+	margin-bottom: 0;
 }
